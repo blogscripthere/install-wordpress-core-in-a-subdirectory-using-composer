@@ -1,4 +1,4 @@
-# install-wordpress-core-in-a-subdirectory-using-composer
+# How to Install WordPress core in a Subdirectory using Composer ?
 
 We all like WordPress, but personally I do not want to see all the main WordPress core files in the root of the site, because if manages multiple WordPress sites on the same web server, it is important to keep organized your installs, it looks messy and unprofessional or you may not want to install WordPress at the root of your website. In any case, fortunately, WordPress gives us the flexibility to install the WordPress core in a custom subdirectory. This adjustment gives us more security and also to avoid frequent pitfalls.
 
