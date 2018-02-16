@@ -1,1 +1,1 @@
-# install-wordpress-core-in-a-subdirectory-using-composer
+# How to Install WordPress core in a Subdirectory using Composer ?
