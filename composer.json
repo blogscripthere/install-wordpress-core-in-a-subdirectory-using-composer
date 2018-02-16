@@ -1,0 +1,48 @@
+{
+  "name": "scripthere/script",
+  "description": "WordPress and everything else with Composer.",
+  "type": "project",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Narendra Padala",
+      "email": "narendrapadala@gmail.com",
+      "homepage": "http://scripthere.com/"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    }
+  ],
+  "extra": {
+    "wordpress-install-dir": "core",
+    "installer-paths": {
+      "vendor/{$vendor}/{$name}": [
+        "webdevstudios/cmb2"
+      ],
+      "content/plugins/{$name}/": ["type:wordpress-plugin"],
+      "content/mu-plugins/{$name}": ["type:wordpress-muplugin"],
+      "content/themes/{$name}/": ["type:wordpress-theme"]
+    }
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "cp core/index.php ./index.php",
+	  "cp core/wp-config-sample.php ./wp-config.php"
+	]
+  },
+  "require": {
+    "composer/installers": "^v1.3",
+    "johnpbloch/wordpress": "^4.9"
+  },
+  "require-dev": {
+    "wpackagist-plugin/whats-running": "^1.9",
+    "wpackagist-plugin/debug-wp-redirect": "^1.1",
+    "wpackagist-plugin/post-meta-inspector": "^1.1",
+    "wpackagist-plugin/post-meta-manager": "^1.0",
+    "wpackagist-plugin/debug-meta-data": "^1.0",
+    "wpackagist-theme/twentyseventeen": "^1.4"
+  }
+}
